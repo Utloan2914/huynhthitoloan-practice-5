@@ -7,6 +7,7 @@ use App\Models\User;
 
 class UserController extends Controller
 {
+
     public function index()
     {
         $users = User::all();
@@ -43,4 +44,5 @@ class UserController extends Controller
         $user->delete();
         return response()->json(null, 204);
     }
+
 }
